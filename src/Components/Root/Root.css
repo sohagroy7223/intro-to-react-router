@@ -2,3 +2,10 @@
   display: flex;
   gap: 20px;
 }
+
+nav a.active {
+  color: white;
+  background: teal;
+  padding: 5px;
+  border-radius: 5px;
+}
