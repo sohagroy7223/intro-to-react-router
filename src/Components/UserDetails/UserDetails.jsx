@@ -1,11 +1,16 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, useParams } from "react-router";
 import { useLoaderData, useNavigate } from "react-router";
 
 const UserDetails = () => {
+  // get data form fetch call*********
+
+  const params = useParams();
+
   const data = useLoaderData();
   const { website, company, username } = data;
   const navigate = useNavigate();
+
   return (
     <div
       style={{
