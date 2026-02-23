@@ -34,7 +34,7 @@ const router = createBrowserRouter([
 
         element: (
           <Suspense fallback={<span>Loading...</span>}>
-            <Users2 usersPromise={usersPromise}></Users2>,
+            <Users2 usersPromise={usersPromise}></Users2>
           </Suspense>
         ),
       },
