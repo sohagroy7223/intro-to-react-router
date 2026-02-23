@@ -5,7 +5,8 @@ import { useLoaderData, useNavigate } from "react-router";
 const UserDetails = () => {
   // get data form fetch call*********
 
-  const params = useParams();
+  // const params = useParams();
+  // console.log(params.userId);
 
   const data = useLoaderData();
   const { website, company, username } = data;
@@ -20,7 +21,7 @@ const UserDetails = () => {
       }}
     >
       <h3>company: {company.name}</h3>
-      <h4>username: {username}</h4>
+      <h4>user-name: {username}</h4>
       <p>website: {website}</p>
       <button onClick={() => navigate(-1)}>return page</button>
       {/* <Link to={"/users"}>back</Link> */}
