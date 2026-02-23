@@ -17,8 +17,8 @@ const UserDetails = () => {
       <h3>company: {company.name}</h3>
       <h4>username: {username}</h4>
       <p>website: {website}</p>
-      {/* <button onClick={() => navigate(-1)}>return page</button> */}
-      <Link onClick={() => navigate(-1)}>back</Link>
+      <button onClick={() => navigate(-1)}>return page</button>
+      {/* <Link to={"/users"}>back</Link> */}
     </div>
   );
 };
