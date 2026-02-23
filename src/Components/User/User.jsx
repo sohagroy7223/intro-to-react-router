@@ -29,7 +29,7 @@ const User = ({ user }) => {
       <p>{email}</p>
       <p>{phone}</p>
       <Link to={`/users/${id}`}>Show Details</Link>
-      <button onClick={handelClick}>{showDetail ? "hide" : "show"} info</button>
+      <button onClick={handelClick}>{showDetail ? "hide" : "more"} info</button>
       {/* <button onClick={() => navigate("/users2")}>Detail of: {id}</button> */}
       {showDetail && (
         <Suspense fallback={<span>Loading...</span>}>
