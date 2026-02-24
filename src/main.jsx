@@ -11,7 +11,7 @@ import Books from "./Components/Books/Books.jsx";
 import Users from "./Components/Users/Users.jsx";
 import Users2 from "./Components/Users2/Users2.jsx";
 import UserDetails from "./Components/UserDetails/UserDetails.jsx";
-import Posts from "./Components/Posts/posts.jsx";
+import Post from "./Components/Post/Post.jsx";
 
 const usersPromise = fetch("https://jsonplaceholder.typicode.com/users").then(
   (res) => res.json(),
@@ -47,7 +47,8 @@ const router = createBrowserRouter([
       },
       {
         path: "posts",
-        Component: Posts,
+        loader: () => fetch("https://jsonplaceholder.typicode.com/posts"),
+        Component: Post,
       },
     ],
   },
