@@ -7,7 +7,7 @@ const Footer = () => {
       <div>
         <a href="/">terms</a>
         <a href="/">privacy</a>
-        <a href="/fb">facebook</a>
+        <a href="/https://www.facebook.com/sohag.roy.120117">facebook</a>
       </div>
     </div>
   );

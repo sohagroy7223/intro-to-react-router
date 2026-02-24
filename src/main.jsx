@@ -13,6 +13,7 @@ import Users2 from "./Components/Users2/Users2.jsx";
 import UserDetails from "./Components/UserDetails/UserDetails.jsx";
 import Post from "./Components/Post/Post.jsx";
 import PostDetails from "./Components/PostDetails/PostDetails.jsx";
+import Sohag from "./Components/Root/SideBar/SohagInfo/Sohag.jsx";
 
 const usersPromise = fetch("https://jsonplaceholder.typicode.com/users").then(
   (res) => res.json(),
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
         loader: ({ params }) =>
           fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
         Component: PostDetails,
+      },
+      {
+        path: "sohag",
+        Component: Sohag,
       },
     ],
   },
