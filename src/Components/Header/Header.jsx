@@ -4,8 +4,7 @@ import "./header.css";
 import { NavLink } from "react-router";
 const Header = () => {
   return (
-    <div>
-      <h2>this is header</h2>
+    <div className="nav-container">
       <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/laptop">Laptop</NavLink>

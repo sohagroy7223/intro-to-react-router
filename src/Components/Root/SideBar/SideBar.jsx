@@ -1,13 +1,18 @@
 import React from "react";
-
+import "./sideBar.css";
 const SideBar = () => {
   return (
-    <div>
-      <p>sideNav-1</p>
-      <p>sideNav-2</p>
-      <p>sideNav-3</p>
-      <p>sideNav-4</p>
-      <p>sideNav-5</p>
+    <div className="side-container">
+      <p>sideNav</p>
+      <p>sideNav</p>
+      <p>sideNav</p>
+      <p>sideNav</p>
+      <p>sideNav</p>
+      <p>sideNav</p>
+      <p>sideNav</p>
+      <p>sideNav</p>
+      <p>sideNav</p>
+      <p>sideNav</p>
     </div>
   );
 };
