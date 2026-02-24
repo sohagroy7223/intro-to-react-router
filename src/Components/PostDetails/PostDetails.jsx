@@ -7,7 +7,9 @@ const PostDetails = () => {
   const navigate = useNavigate();
 
   return (
-    <div style={{ border: "2px solid yellow", height: "200px" }}>
+    <div
+      style={{ border: "2px solid yellow", height: "200px", marginTop: "10px" }}
+    >
       <h3>{post.title}</h3>
       <p>{post.body}</p>
 

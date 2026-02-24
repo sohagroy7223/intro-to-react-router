@@ -1,7 +1,7 @@
 import React, { Suspense, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import UserDetails2 from "../UserDetails2/UserDetails2";
-
+import "./user.css";
 const User = ({ user }) => {
   const [showDetail, setShowDetail] = useState(false);
   const { id, name, email, phone } = user;
@@ -14,17 +14,10 @@ const User = ({ user }) => {
     setShowDetail(!showDetail);
   };
 
-  const userStyle = {
-    border: "2px solid blue",
-    borderRadius: "20px",
-    padding: "10px",
-    margin: "10px",
-  };
-
   // const navigate = useNavigate();
 
   return (
-    <div style={userStyle}>
+    <div className="userStyle">
       <h3>{name}</h3>
       <p>{email}</p>
       <p>{phone}</p>

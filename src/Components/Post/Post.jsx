@@ -1,6 +1,7 @@
 import React from "react";
 import { useLoaderData } from "react-router";
 import SinglePost from "../singlePost/SinglePost";
+import "./post.css";
 
 const Posts = () => {
   const posts = useLoaderData();
@@ -8,15 +9,12 @@ const Posts = () => {
 
   return (
     <div>
-      <p>
-        all posts is here{" "}
-        <b>
-          <i>{posts.length}</i>
-        </b>
-      </p>
-      {posts.map((post) => (
-        <SinglePost key={post.id} post={post}></SinglePost>
-      ))}
+      <p>all posts is here {posts.length}</p>
+      <div className="post-container">
+        {posts.map((post) => (
+          <SinglePost key={post.id} post={post}></SinglePost>
+        ))}
+      </div>
     </div>
   );
 };
